@@ -11,7 +11,12 @@ app = Flask(__name__)
 
 @app.route('/')
 def main():
-    return "Cannot be directly called"
+    return """<html>
+<body>
+<p>Cannot be directly called</p>
+<a href="https://github.com/tunnell/drinking-bird">https://github.com/tunnell/drinking-bird</a>
+</body>
+</html>"""
 
 @app.route('/tasks/hourly')
 def hourly():
