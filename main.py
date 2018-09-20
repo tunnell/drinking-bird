@@ -24,7 +24,6 @@ def hourly():
 def get_mongo_url():
     doc = json.load(open('keys.json'))
     url = f"mongodb://{doc['mongoUsername']}:{doc['mongoPassword']}@{doc['mongoUrl']}"
-    print(url)
     return url
 
 def clear_no_heartbeat():
